@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Navbar */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  background: var(--bg-nav);
+  color: var(--text);
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: var(--text);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--bg);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--text);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--bg-solar);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Theme */
+:root {
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
+  --green0: #10f32e;
+  --green1: #0ac423;
+  --blue: #57C4E5;
+  --purple: #212738;
+  --yellow: #D1D646;
+  --red: #F97068; 
+}
+
+.light {
+  --bg: var(--gray0);
+  --bg-nav: linear-gradient(to right, var(--gray0), var(--gray1));
+  --text: var(--gray6);
+  --border-color: var(--blue);
+  --bg-solar: var(--blue);
+  --t-text: var(--gray3);
+  --t-stat: var(--green1)
+}
+
+.dark {
+  --bg: var(--gray5);
+  --bg-nav: linear-gradient(to right, var(--gray5), var(--gray6));
+  --text: var(--gray0);
+  --border-color: var(--purple);
+  --bg-solar: var(--blue);
+  --t-text: var(--gray2);
+  --t-stat: var(--green0)
+}
+
+.solar {
+  --gray0: #fbffd4;
+  --gray1: #f7f8d0;
+  --gray2: #b6f880;
+  --gray3: #5ec72d;
+  --gray4: #3ea565;
+  --gray5: #005368;
+  --gray6: #003d4c;
+  --green0: #27fa43;
+  --green1: #05d120;
+}
+
+/* Torrent Styling */
+.torrent {
+  
+}
+
+.torrent-item #title {
+  font-size: 1em;
+  color: var(--text);
+}
+
+.torrent-item #desc {
+margin: 5px;
+width: 50%;
+color: var(--t-text);
+}
+
+.torrent-item #stats {
+  color: var(--text);
+}
+
+.torrent-item #stats[value="high"] {
+color: var(--t-stat);
+}
+
+.torrent-item #stats[value="low"] {
+color: red;
+}
+
+/* Modal */
+
+.modal {
+
+}
+
+#upload {
+  background: var(--bg);
+  color: var(--text);
+}
+#login {
+  background: var(--bg);
+  color: var(--text);
+}

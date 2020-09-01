@@ -1,0 +1,10 @@
+<?php
+
+$dbServername = "localhost";
+$dbUsername = "root";
+$dbPassword = "dbpassword";
+$dbName = "waifu";
+
+$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+
+$db = new PDO("mysql:host=localhost;dbname=waifu","root","dbpassword");
